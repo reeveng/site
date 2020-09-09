@@ -1,0 +1,34 @@
+/*
+-------------------------
+keep all colors in hsl or hsla
+-------------------------
+*/
+$blue: #05386b;
+$darker-green: #172815;
+$dark-green: #379683;
+$green: #5cdb95;
+$light-green: #8ee4af;
+
+$white: #edf5e1;
+$black: #2c3e50;
+
+$background: $green;
+$background-nav: $blue;
+
+// logo
+$logo-text-color: $green;
+$logo-background-color: $blue;
+
+$primary: $white;
+$secondary: $light-green;
+$accent: $dark-green;
+$accent-2: $darker-green;
+
+
+
+$badge-text-color: #ffffff;
+$badge-default-bg: #2c3e50;
+$badge-info-bg: #3498db;
+$badge-warning-bg: #f1c40f;
+$badge-danger-bg: #e74c3c;
+$badge-success-bg: #2ecc71;

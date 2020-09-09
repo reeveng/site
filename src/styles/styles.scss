@@ -1,0 +1,35 @@
+/*----------------- config scss files -----------------------*/
+@import './config/_colors.scss', '../assets/fonts/fonts';
+
+/*----------------- components scss files -----------------------*/
+@import './components/_loading.scss', './components/nav', './components/badge';
+
+/*----------------- pages scss files -----------------------*/
+@import './pages/_home.scss';
+
+.app,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding-left: 10%;
+}
+::-webkit-scrollbar-track {
+  background-color: $background;
+}
+.scrollable-content::-webkit-scrollbar * {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $accent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $accent-2;
+}
+::-webkit-scrollbar {
+  display: none;
+}
