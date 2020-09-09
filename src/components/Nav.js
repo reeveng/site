@@ -1,20 +1,24 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ReactComponent as Logo } from "../assets/vector/logo.svg";
+import NavButton from './NavButton';
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const scrollToRef = (id) => document.getElementById(id).scrollIntoView();
 
 const Nav = () => {
-  const myRef = useRef(null);
-  const executeScroll = () => scrollToRef(myRef)
-
   return (
     <>
       <div className="nav">
         <Logo className="logo" />
         <div>
-          <button onClick={() => scrollToRef("about")}>
+          <NavButton onClick={() => scrollToRef("home")}>
+            Home
+          </NavButton>
+          <NavButton onClick={() => scrollToRef("about")}>
             About
-        </button>
+          </NavButton>
+          <NavButton onClick={() => scrollToRef("projects")}>
+            Projects
+          </NavButton>
         </div>
       </div>
 

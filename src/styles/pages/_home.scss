@@ -57,7 +57,7 @@ body {
   background: $background;
 
   & .pane {
-    padding-left: 10%;
+    padding-left: $nav-width;
     font-size: 16px;
     height: 100%;
     width: 100%;

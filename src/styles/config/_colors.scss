@@ -24,11 +24,20 @@ $secondary: $light-green;
 $accent: $dark-green;
 $accent-2: $darker-green;
 
-
-
 $badge-text-color: #ffffff;
 $badge-default-bg: #2c3e50;
 $badge-info-bg: #3498db;
 $badge-warning-bg: #f1c40f;
 $badge-danger-bg: #e74c3c;
 $badge-success-bg: #2ecc71;
+
+// buttons
+$color-gray: $blue;
+$color-black: $green;
+
+$btn-color: $color-gray;
+$btn-background: $green;
+$btn-color-hover: $green;
+$btn-background-hover: $color-gray;
+$border-color: $color-gray;
+$border-color-hover: $color-black;

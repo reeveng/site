@@ -1,8 +1,8 @@
 /*----------------- config scss files -----------------------*/
-@import './config/_colors.scss', '../assets/fonts/fonts';
+@import './config/variables', './config/_colors.scss', '../assets/fonts/fonts';
 
 /*----------------- components scss files -----------------------*/
-@import './components/_loading.scss', './components/nav', './components/badge';
+@import './components/_loading.scss', './components/nav', 'components/navButton', './components/badge';
 
 /*----------------- pages scss files -----------------------*/
 @import './pages/_home.scss';

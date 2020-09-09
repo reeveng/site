@@ -4,17 +4,15 @@ import { ReactComponent as Working } from "../assets/vector/working.svg"
 import Badge from '../components/Badge';
 
 const Home = () => {
-
   return (
     <>
       <Nav />
       <div id="homepage">
-        <div className="pane">
+        <div className="pane" id="home">
           <div className="content">
             <h1 className="title">
               I am Reeven
             </h1>
-
             <div>
               <Working alt="hey" height="500px" id="working-svg" />
             </div>
@@ -25,7 +23,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="pane">
+        <div className="pane" id="about">
           <div className="content">
             <h1 className="title">
               About
@@ -38,7 +36,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="pane">
+        <div className="pane" id="projects">
           <div className="content">
             <h1 className="title">
               Projects
@@ -49,9 +47,6 @@ const Home = () => {
       </div>
     </>
   );
-
-}
-
-
+};
 
 export default Home;
