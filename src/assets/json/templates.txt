@@ -1,0 +1,21 @@
+// projects.json - project template:
+    {
+      "id": 2,
+      "img_src": "",
+      "img_alt": "",
+      "title": "",
+      "content": "",
+      "date": {
+        "year": 2020,
+        "month": 9,
+        "day": 1
+      },
+      "social_media": [
+        {
+          "id": 1,
+          "name": "Github",
+          "link": "",
+          "img-url": ""
+        }
+      ]
+    }
