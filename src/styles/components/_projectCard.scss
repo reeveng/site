@@ -2,7 +2,7 @@
   .card {
     background: $white;
     border-radius: 2px;
-    display: inline-flex;
+    display: flex;
     height: 75%;
     margin: 2rem;
     border-radius: 6px;
@@ -10,9 +10,13 @@
     padding: 2rem;
     flex-direction: column;
     padding-bottom: 5rem;
+    align-items: center;
 
     .topImg {
       width: 20rem;
+      height: 20rem;
+      border-radius: 50px;
+      background: #999999;
     }
 
     .card-title {
