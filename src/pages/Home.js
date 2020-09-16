@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import { ReactComponent as Working } from "../assets/vector/working.svg"
-import Badge from '../components/Badge';
+// import Badge from '../components/Badge';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
 
@@ -16,14 +16,16 @@ const Home = () => {
             <h1 className="title">
               I am Reeven
             </h1>
+            <div className="content-body">
             <div id="working-svg">
               <Working />
             </div>
-            <div className="badges">
+            {/* <div className="badges">
               <Badge className="badge--line">Developer</Badge>
               <Badge className="badge--line">Daredevil</Badge>
               <Badge className="badge--line">Designer</Badge>
-            </div>
+            </div> */}
+          </div>
           </div>
         </div>
         <div className="pane" id="about">
@@ -46,7 +48,7 @@ const Home = () => {
             </h1>
             <div className="project-list">
               {projects.map(project => {
-                return (<ProjectCard imgSrc={project.img_src} key={project.id} cardTitle={project.title} imgAlt={project.img_alt} />)
+                return (<ProjectCard imgSrc={project.img_src} projectId={project.id} key={project.id} cardTitle={project.title} imgAlt={project.img_alt} />)
               })}
             </div>
           </div>

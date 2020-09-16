@@ -83,6 +83,14 @@ body {
         margin-top: 5rem;
         margin-bottom: 5rem;
       }
+
+      & .content-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
   & .pane:nth-child(2) {
@@ -114,14 +122,15 @@ body {
 
 #working-svg {
   align-self: center;
-  min-width: 40%;
+  min-width: 40rem;
+  width: 100px;
 }
 
 #home .content {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   #homepage {
     .about-text {
       font-size: 0.7rem;
@@ -140,8 +149,18 @@ body {
   }
 
   #working-svg {
-    margin-top: 3rem;
     align-self: center;
-    min-width: 70%;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  #working-svg {
+    min-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #working-svg {
+  min-width: 15rem;
   }
 }

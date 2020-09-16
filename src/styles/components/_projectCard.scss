@@ -3,14 +3,14 @@
     background: $white;
     border-radius: 2px;
     display: flex;
-    height: 75%;
+    height: 90%;
     margin: 2rem;
     border-radius: 6px;
     color: $dark-green;
     padding: 2rem;
     flex-direction: column;
-    padding-bottom: 5rem;
     align-items: center;
+    justify-content: center;
 
     .topImg {
       width: 20rem;
@@ -34,6 +34,39 @@
       color: $white;
       transition: 0.5s;
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-list{
+    .card{
+      .topImg {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .project-list{
+    .card{
+      .topImg {
+        height: 9rem;
+        width: 9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project-list{
+    .card{
+      .topImg {
+        height: 5rem;
+        width: 5rem;
+      }
     }
   }
 }
