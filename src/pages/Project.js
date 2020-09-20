@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from '../components/Nav';
 import { projects } from "../assets/json/projects";
 
-
 const Project = () => {
   let projectId = parseInt(window.location.href.split("/")[4])
   return (
@@ -10,6 +9,8 @@ const Project = () => {
       <Nav smallNav />
       <div className="p-project__container">
         <div className="p-project__card">{projects.map((project) => {
+          let projectStartDate = new Date(project.date.year, project.date.month, project.date.day);
+          let projectStartDateFormatted = `${projectStartDate.getDate().toString().padStart(2, '0')} / ${(projectStartDate.getMonth() + 1).toString().padStart(2, '0')} / ${projectStartDate.getFullYear()}`;
           if (project.id === projectId) {
             console.log(project)
             return (
@@ -28,7 +29,7 @@ const Project = () => {
                   </div>
 
                   <div className="p-project__header-subtitle">
-                    {project.subtitle}
+                    {projectStartDateFormatted}
                   </div>
                 </div>
                 <div className="p-project__body">
