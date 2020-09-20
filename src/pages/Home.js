@@ -7,6 +7,9 @@ import { projects } from "../assets/json/projects";
 
 const Home = () => {
   projects.sort((a, b) => new Date(b.date.year, b.date.month - 1) - new Date(a.date.year, a.date.month - 1));
+  window.addEventListener('scroll', function (e) {
+    console.log("hi")
+  });
   return (
     <>
       <Nav />
@@ -17,15 +20,15 @@ const Home = () => {
               I am Reeven
             </h1>
             <div className="content-body">
-            <div id="working-svg">
-              <Working />
-            </div>
-            {/* <div className="badges">
+              <div id="working-svg">
+                <Working />
+              </div>
+              {/* <div className="badges">
               <Badge className="badge--line">Developer</Badge>
               <Badge className="badge--line">Daredevil</Badge>
               <Badge className="badge--line">Designer</Badge>
             </div> */}
-          </div>
+            </div>
           </div>
         </div>
         <div className="pane" id="about">

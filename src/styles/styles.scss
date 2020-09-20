@@ -6,7 +6,24 @@
   './components/projectCard';
 
 /*----------------- pages scss files -----------------------*/
-@import './pages/_home.scss';
+@import './pages/_home.scss', './pages/_project.scss';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0%;
+  background-color: $background;
+}
+
+@media only screen and (max-width: 1023px) {
+  html {
+    background: $background-nav;
+  }
+  body {
+    height: 100%;
+  }
+}
 
 .app,
 #root {

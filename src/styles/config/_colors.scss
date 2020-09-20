@@ -4,6 +4,7 @@ keep all colors in hsl or hsla
 -------------------------
 */
 $blue: #05386b;
+$blue-o5: hsla(210, 91%, 22%, 0.5);
 $darker-green: #172815;
 $dark-green: #379683;
 $green: #5cdb95;
@@ -41,3 +42,6 @@ $btn-color-hover: $green;
 $btn-background-hover: $color-gray;
 $border-color: $color-gray;
 $border-color-hover: $color-black;
+
+// background
+$background-nav-small: $blue-o5;
