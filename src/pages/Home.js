@@ -38,9 +38,9 @@ const Home = () => {
             </h1>
             <div className="about-text">
               I am a young designer and developer from Belgium.
-              <br />I want to create a smile on the face of the people around me.
-              <br />I enjoy solving enigmas and problems of any kind.
-              <br />I love to travel to distant countries.
+              I want to create a smile on the face of the people around me.
+              I enjoy solving enigmas and problems of any kind.
+              I love to travel to distant countries.
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ const Project = () => {
                   </div>
                 </div>
                 <div className="p-project__body">
-                  {project.content}
+                  {project.content.map((string, index) => { return (<div key={index}>{string}</div>) })}
                 </div>
               </div>
             )
