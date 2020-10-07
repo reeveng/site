@@ -37,10 +37,24 @@ const Home = () => {
               About
             </h1>
             <div className="about-text">
+              <div className="about-text-intro">
+                I am a Developer and Creative Designer born and raised (mainly) in Belgium.
+                As a recent graduate I am quite interested in learning and developing / honing my current set of skills.
+                I speak the language of developers with a users perspective in mind.
+                I love doing UX/UI, Branding, photography, Graphic Design, ... Let's just say I am a studio on my on.
+                <br />
+                <br />
+                
+              </div>
+
+              {/* 2. Significant personal achievements or awards
+              3. Personal details: goals, hobbies, ...
+
               I am a young designer and developer from Belgium.
               I want to create a smile on the face of the people around me.
               I enjoy solving enigmas and problems of any kind.
-              I love to travel to distant countries.
+              I love to travel to distant countries. */}
+
             </div>
           </div>
         </div>

@@ -1,8 +1,17 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import { projects } from "../assets/json/projects";
+import Github from "../assets/vector/socialMedia/github.svg"
+import Gmail from "../assets/vector/socialMedia/gmail.svg"
+
+export const socialMedia = {
+  github: Github,
+  gmail: Gmail,
+  mail: Gmail,
+};
 
 const Project = () => {
+  console.log(socialMedia["github"])
   let projectId = parseInt(window.location.href.split("/")[4])
   return (
     <div id="p-project">
@@ -12,7 +21,6 @@ const Project = () => {
           let projectStartDate = new Date(project.date.year, project.date.month, project.date.day);
           let projectStartDateFormatted = `${projectStartDate.getDate().toString().padStart(2, '0')} / ${(projectStartDate.getMonth() + 1).toString().padStart(2, '0')} / ${projectStartDate.getFullYear()}`;
           if (project.id === projectId) {
-            console.log(project)
             return (
               <div key={projectId}>
                 <div className="p-project__header">
@@ -34,14 +42,24 @@ const Project = () => {
                 </div>
                 <div className="p-project__body">
                   {project.content.map((string, index) => { return (<div key={index}>{string}</div>) })}
+                  <div className="p-project__socials">
+                    {project.social_media.map((social) => {
+                      return <div key={`${social.id}`} className={`social-${social.name.toLowerCase()}`}>
+                        <a href={social.link}>
+                          <img alt="" width="48px" height="48px" src={socialMedia[social.name.toLowerCase()]} />
+                        </a>
+                      </div>
+                    })}
+                  </div>
                 </div>
+
               </div>
             )
           }
           return "";
         })}</div>
       </div>
-    </div>
+    </div >
   );
 }
 
