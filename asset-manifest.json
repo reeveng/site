@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.1774f016.chunk.css",
-    "main.js": "/static/js/main.bfaaa9d8.chunk.js",
-    "main.js.map": "/static/js/main.bfaaa9d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
-    "static/js/2.d059eb55.chunk.js": "/static/js/2.d059eb55.chunk.js",
-    "static/js/2.d059eb55.chunk.js.map": "/static/js/2.d059eb55.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7585dd5d37acc291c981452a9e060f0b.js": "/precache-manifest.7585dd5d37acc291c981452a9e060f0b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1774f016.chunk.css.map": "/static/css/main.1774f016.chunk.css.map",
-    "static/js/2.d059eb55.chunk.js.LICENSE.txt": "/static/js/2.d059eb55.chunk.js.LICENSE.txt",
-    "static/media/styles.scss": "/static/media/BigJohnPRO-Regular.9b550f15.otf",
-    "static/media/github.svg": "/static/media/github.617870e4.svg",
-    "static/media/gmail.svg": "/static/media/gmail.b986b4fd.svg",
-    "static/media/logo.0a0f614d.svg": "/static/media/logo.0a0f614d.svg",
-    "static/media/menu.55f68494.svg": "/static/media/menu.55f68494.svg",
-    "static/media/remove.a0196991.svg": "/static/media/remove.a0196991.svg",
-    "static/media/working.80e708e2.svg": "/static/media/working.80e708e2.svg"
+    "main.css": "/site/static/css/main.62e64a73.chunk.css",
+    "main.js": "/site/static/js/main.f71b484e.chunk.js",
+    "main.js.map": "/site/static/js/main.f71b484e.chunk.js.map",
+    "runtime-main.js": "/site/static/js/runtime-main.c498db56.js",
+    "runtime-main.js.map": "/site/static/js/runtime-main.c498db56.js.map",
+    "static/js/2.d059eb55.chunk.js": "/site/static/js/2.d059eb55.chunk.js",
+    "static/js/2.d059eb55.chunk.js.map": "/site/static/js/2.d059eb55.chunk.js.map",
+    "index.html": "/site/index.html",
+    "precache-manifest.7553e49d716b51e9c5a99e47886d3161.js": "/site/precache-manifest.7553e49d716b51e9c5a99e47886d3161.js",
+    "service-worker.js": "/site/service-worker.js",
+    "static/css/main.62e64a73.chunk.css.map": "/site/static/css/main.62e64a73.chunk.css.map",
+    "static/js/2.d059eb55.chunk.js.LICENSE.txt": "/site/static/js/2.d059eb55.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/site/static/media/BigJohnPRO-Regular.9b550f15.otf",
+    "static/media/github.svg": "/site/static/media/github.617870e4.svg",
+    "static/media/gmail.svg": "/site/static/media/gmail.b986b4fd.svg",
+    "static/media/logo.0a0f614d.svg": "/site/static/media/logo.0a0f614d.svg",
+    "static/media/menu.55f68494.svg": "/site/static/media/menu.55f68494.svg",
+    "static/media/remove.a0196991.svg": "/site/static/media/remove.a0196991.svg",
+    "static/media/working.80e708e2.svg": "/site/static/media/working.80e708e2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ceaf4b5f.js",
+    "static/js/runtime-main.c498db56.js",
     "static/js/2.d059eb55.chunk.js",
-    "static/css/main.1774f016.chunk.css",
-    "static/js/main.bfaaa9d8.chunk.js"
+    "static/css/main.62e64a73.chunk.css",
+    "static/js/main.f71b484e.chunk.js"
   ]
 }
