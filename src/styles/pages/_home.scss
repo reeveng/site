@@ -80,6 +80,34 @@
   align-self: center;
   min-width: 40rem;
   width: 100px;
+  //  animation: random 5s ease-in-out;
+
+  #working {
+    width: 100%;
+
+    // #body {
+    //   // animation: kaboom 10s infinite;
+    // }
+
+    // #background {
+    // }
+  }
+}
+@keyframes kaboom {
+  0% {
+    transform: translate(-90%);
+  }
+  100% {
+    // transform: scale(1.1);
+  }
+}
+@keyframes random {
+  0% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0%;
+  }
 }
 
 #home .content {

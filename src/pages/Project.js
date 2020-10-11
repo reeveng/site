@@ -32,21 +32,24 @@ const Project = () => {
                     />
                   </div>
 
-                  <div className="p-project__header-title">
+                  <h1 className="p-project__header-title">
                     {project.title}
-                  </div>
+                  </h1>
 
-                  <div className="p-project__header-subtitle">
+                  <h4 className="p-project__header-subtitle">
                     {projectStartDateFormatted}
-                  </div>
+                  </h4>
                 </div>
+
                 <div className="p-project__body">
                   {project.content.map((string, index) => { return (<div key={index}>{string}</div>) })}
+
+                  <h2 className="p-project__socials__title">Socials</h2>
                   <div className="p-project__socials">
                     {project.social_media.map((social) => {
                       return <div key={`${social.id}`} className={`social-${social.name.toLowerCase()}`}>
                         <a href={social.link}>
-                          <img alt="" width="48px" height="48px" src={socialMedia[social.name.toLowerCase()]} />
+                          <img alt={social.name.toLowerCase()} width="48px" height="48px" src={socialMedia[social.name.toLowerCase()]} />
                         </a>
                       </div>
                     })}

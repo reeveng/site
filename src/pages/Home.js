@@ -21,7 +21,7 @@ const Home = () => {
             </h1>
             <div className="content-body">
               <div id="working-svg">
-                <Working />
+                <Working id="working" />
               </div>
               {/* <div className="badges">
               <Badge className="badge--line">Developer</Badge>
@@ -44,7 +44,7 @@ const Home = () => {
                 I love doing UX/UI, Branding, photography, Graphic Design, ... Let's just say I am a studio on my on.
                 <br />
                 <br />
-                
+
               </div>
 
               {/* 2. Significant personal achievements or awards
