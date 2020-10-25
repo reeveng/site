@@ -26,12 +26,18 @@ $secondary: $light-green;
 $accent: $dark-green;
 $accent-2: $darker-green;
 
+// badge
 $badge-text-color: #ffffff;
 $badge-default-bg: #2c3e50;
 $badge-info-bg: #3498db;
 $badge-warning-bg: #f1c40f;
 $badge-danger-bg: #e74c3c;
 $badge-success-bg: #2ecc71;
+
+$badge--line-text: $blue;
+$badge--line-shadow: $blue;
+$badge--basic-text: $white;
+$badge--basic-background: $black;
 
 // buttons
 $color-gray: $blue;
@@ -46,3 +52,22 @@ $border-color-hover: $color-black;
 
 // background
 $background-nav-small: $blue-o5;
+
+// card
+$card-basic-text: $dark-green;
+$card-basic-background: $white;
+$card-basic-background--hover: $dark-green;
+$card-basic-text--hover: $white;
+
+// projectpage
+$project-card-background: $dark-green;
+$project-background--small: $dark-green;
+$project-card__header-image-background: $white;
+$project-card-text: $white;
+
+// homepage
+$homepage--basic-text: $white;
+$card-basic__image-background: $gray;
+
+// loading
+$loading-light: $white;

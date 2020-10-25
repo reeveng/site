@@ -1,12 +1,12 @@
 .project-list {
   .card {
-    background: $white;
+    background: $card-basic-background;
     border-radius: 2px;
     display: flex;
     height: 90%;
     margin: 2rem;
     border-radius: 50px;
-    color: $dark-green;
+    color: $card-basic-text;
     padding: 2rem;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
       width: 20rem;
       height: 20rem;
       border-radius: 50px;
-      background: $gray;
+      background: $card-basic__image-background;
     }
 
     .card-title {
@@ -30,8 +30,8 @@
     }
 
     &:hover {
-      background: $dark-green;
-      color: $white;
+      background: $card-basic-background--hover;
+      color: $card-basic-text--hover;
       transition: 0.5s;
       cursor: pointer;
     }

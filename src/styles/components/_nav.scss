@@ -3,7 +3,11 @@
   height: $nav-height;
   width: $nav-width;
   background: $background-nav;
-  color: $white;
+
+  a {
+    text-decoration: none;
+    width: 100%;
+  }
 }
 
 .logo {
@@ -60,6 +64,7 @@
     display: none;
     top: 50%;
     position: absolute;
+    z-index: 10;
     width: 90%;
     height: 20rem;
     background: $background-nav-small;

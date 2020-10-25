@@ -11,8 +11,8 @@ export const socialMedia = {
 };
 
 const Project = () => {
-  console.log(socialMedia["github"])
-  let projectId = parseInt(window.location.href.split("/")[4])
+  const urlArray = window.location.href.split("/");
+  const projectId = parseInt(urlArray[urlArray.length - 1])
   return (
     <div id="p-project">
       <Nav smallNav />

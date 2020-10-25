@@ -5,16 +5,18 @@ import Loading from './components/Loading';
 
 // pages
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 import Project from './pages/Project';
 
 function App() {
-
   return (
     <div className="app">
       <Switch>
         <PublicRoute exact path="/projects/:id" component={Project} heroActive />
         <PublicRoute exact path="/" component={Home} heroActive />
         <PublicRoute exact path="/home" component={Home} heroActive />
+        <PublicRoute exact path="/notFound" component={NotFound} />
+        <PublicRoute component={NotFound} />
       </Switch>
     </div>
   );

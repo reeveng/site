@@ -1,8 +1,8 @@
 .badge {
   box-sizing: border-box;
   display: inline-block;
-  background-color: $black;
-  color: $white;
+  background-color: $badge--basic-background;
+  color: $badge--basic-text;
   font-family: 'Open Sans', sans-serif;
   border-radius: 3rem;
   text-align: center;
@@ -15,8 +15,8 @@
 
 .badge--line {
   background-color: transparent;
-  color: $blue;
-  box-shadow: 0 0 0 3px $blue;
+  color: $badge--line-text;
+  box-shadow: 0 0 0 3px $badge--line-shadow;
   font-weight: bold;
 }
 

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from "../assets/vector/logo.svg";
 import { ReactComponent as Menu } from "../assets/vector/menu.svg";
 import { ReactComponent as Remove } from "../assets/vector/remove.svg";
@@ -24,15 +25,22 @@ const Nav = ({ smallNav }) => {
   if (dimensions.width >= 1024) {
     nav = (
       <div className="c-nav__button-group">
-        <NavButton onClick={() => window.location.href = "/#home"}>
-          Home
-        </NavButton>
-        <NavButton onClick={() => window.location.href = "/#about"}>
-          About
-        </NavButton>
-        <NavButton onClick={() => window.location.href = "/#projects"}>
-          Projects
-        </NavButton>
+        <Link to="/">
+          <NavButton >
+            Home
+          </NavButton>
+        </Link>
+        {/*     <Link to="/#about">
+          <NavButton >
+            About
+          </NavButton>
+        </Link>
+
+        <Link to="/#projects">
+          <NavButton>
+            Projects
+          </NavButton>
+        </Link> */}
       </div >
     );
   }
@@ -51,15 +59,23 @@ const Nav = ({ smallNav }) => {
             document.getElementsByClassName("remove-btn")[0].classList.remove("visible");
           }} />
         <div className="menu-small">
-          <NavButton onClick={() => window.location.href = "/#home"}>
-            Home
-          </NavButton>
-          <NavButton onClick={() => window.location.href = "/#about"}>
-            About
-          </NavButton>
-          <NavButton onClick={() => window.location.href = "/#projects"}>
-            Projects
-          </NavButton>
+          <Link to="/">
+            <NavButton >
+              Home
+            </NavButton>
+          </Link>
+
+          {/* <Link to="/#about">
+            <NavButton >
+              About
+            </NavButton>
+          </Link>
+
+          <Link to="/#projects">
+            <NavButton>
+              Projects
+            </NavButton>
+          </Link> */}
         </div>
       </>
     );
@@ -79,15 +95,23 @@ const Nav = ({ smallNav }) => {
             document.getElementsByClassName("remove-btn")[0].classList.remove("visible");
           }} />
         <div className="menu-small">
-          <NavButton onClick={() => window.location.href = "/#home"}>
-            Home
-             </NavButton>
-          <NavButton onClick={() => window.location.href = "/#about"}>
-            About
+          <Link to="/">
+            <NavButton >
+              Home
             </NavButton>
-          <NavButton onClick={() => window.location.href = "/#projects"}>
-            Projects
+          </Link>
+
+          {/* <Link to="/#about">
+            <NavButton >
+              About
             </NavButton>
+          </Link>
+
+          <Link to="/#projects">
+            <NavButton>
+              Projects
+            </NavButton>
+          </Link> */}
         </div>
       </>
     );

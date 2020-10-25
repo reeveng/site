@@ -1,0 +1,68 @@
+.code-area {
+  color: #d3d7de;
+  font-family: 'Courier new';
+  font-size: 18px;
+  line-height: 1.5em;
+  cursor: default;
+  position: absolute;
+  min-width: 320px;
+  // z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 75%;
+
+  max-width: 500px;
+
+  a {
+    color: #fff;
+  }
+
+  .code-area__top,
+  .code-area__bottom {
+    margin: 3rem 0;
+    background: #081421;
+    padding: 2.5rem;
+    border-radius: 27.5px;
+  }
+
+  .code-area__bottom {
+    border-radius: 50px;
+    padding: 1rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    background: #081421;
+    color: $green;
+    width: 100%;
+
+    &:hover {
+      transition: ease-in 0.15s;
+      opacity: 0.75;
+      // background: $blue;
+      cursor: pointer;
+      transition: ease-in 0.25s;
+      // background: $blue;
+    }
+  }
+}
+
+.code-area > span {
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .code-area {
+    font-size: 5vw;
+    min-width: auto;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    padding-left: 10px;
+    line-height: 6.5vw;
+  }
+}

@@ -8,11 +8,10 @@ import { projects } from "../assets/json/projects";
 const Home = () => {
   projects.sort((a, b) => new Date(b.date.year, b.date.month - 1) - new Date(a.date.year, a.date.month - 1));
   window.addEventListener('scroll', function (e) {
-    console.log("hi")
   });
   return (
     <>
-      <Nav />
+      <Nav smallNav />
       <div id="homepage">
         <div className="pane" id="home">
           <div className="content">
