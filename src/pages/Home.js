@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../components/Nav';
 import { ReactComponent as Working } from "../assets/vector/working.svg"
-// import Badge from '../components/Badge';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
+import { socialMedia } from "./Project"
+
+const onScrollHomepage = () => {
+  let homepageDiv = document.getElementById("homepage");
+  homepageDiv.addEventListener("wheel", (event) => {
+    if (event.deltaY < 0) {
+      homepageDiv.scrollLeft -= 25;
+    }
+    else if (event.deltaY > 0) {
+      homepageDiv.scrollLeft += 25;
+    }
+  })
+}
 
 const Home = () => {
   projects.sort((a, b) => new Date(b.date.year, b.date.month - 1) - new Date(a.date.year, a.date.month - 1));
   window.addEventListener('scroll', function (e) {
   });
+  useEffect(() => {
+    onScrollHomepage()
+  }, []);
   return (
     <>
       <Nav smallNav />
@@ -22,11 +37,6 @@ const Home = () => {
               <div id="working-svg">
                 <Working id="working" />
               </div>
-              {/* <div className="badges">
-              <Badge className="badge--line">Developer</Badge>
-              <Badge className="badge--line">Daredevil</Badge>
-              <Badge className="badge--line">Designer</Badge>
-            </div> */}
             </div>
           </div>
         </div>
@@ -41,9 +51,6 @@ const Home = () => {
                 As a recent graduate I am quite interested in learning and developing / honing my current set of skills.
                 I speak the language of developers with a users perspective in mind.
                 I love doing UX/UI, Branding, photography, Graphic Design, ... Let's just say I am a studio on my on.
-                <br />
-                <br />
-
               </div>
 
               {/* 2. Significant personal achievements or awards
@@ -54,6 +61,33 @@ const Home = () => {
               I enjoy solving enigmas and problems of any kind.
               I love to travel to distant countries. */}
 
+            </div>
+            <div className="social-section">
+              <h2 className="social-title">
+                Socials
+              </h2>
+              <div className="social-content">
+                <div className={`social-github`}>
+                  <a href="https://github.com/reeveng">
+                    <img alt="@reeveng on github" width="32px" height="32px" src={socialMedia["github"]} />
+                  </a>
+                </div>
+                <div className={`social-gmail`}>
+                  <a href="mailto:govaertreeven@gmail.com">
+                    <img alt="govaertreeven@gmail.com is my emailaddress" width="32px" height="32px" src={socialMedia["gmail"]} />
+                  </a>
+                </div>
+                <div className={`social-dribbble`}>
+                  <a href="https://dribbble.com/reeveng">
+                    <img alt="reeveng on dribbble" width="32px" height="32px" src={socialMedia["dribble"]} />
+                  </a>
+                </div>
+                <div className={`social-linkedin`}>
+                  <a href="https://www.linkedin.com/in/rgovaert/">
+                    <img alt="rgovaert on linkedin" width="32px" height="32px" src={socialMedia["linkedin"]} />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

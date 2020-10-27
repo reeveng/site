@@ -119,7 +119,7 @@ const Nav = ({ smallNav }) => {
   return (
     <>
       <div className={`nav ${smallNav ? "always-top-nav" : ""}`}>
-        <Logo className="logo" onClick={() => window.location.href = "/"} />
+        <Link to="/" className="logo"><Logo className="logo" /></Link>
         {nav}
       </div>
     </>
