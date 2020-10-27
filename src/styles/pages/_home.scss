@@ -191,6 +191,8 @@
       }
 
       img {
+        width: 32px;
+        height: 32px;
         filter: brightness(0) saturate(100%) invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
           contrast(102%);
       }
@@ -200,9 +202,25 @@
   .social-title {
     font-size: 2.5rem;
     font-family: 'big-john';
-    margin-top: 5rem;
     display: block;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-section {
+    .social-content {
+      div {
+        margin: 0 0.5rem;
+        a {
+          padding: 1rem;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
   }
 }

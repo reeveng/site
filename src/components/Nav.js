@@ -30,17 +30,9 @@ const Nav = ({ smallNav }) => {
             Home
           </NavButton>
         </Link>
-        {/*     <Link to="/#about">
-          <NavButton >
-            About
-          </NavButton>
-        </Link>
-
-        <Link to="/#projects">
-          <NavButton>
-            Projects
-          </NavButton>
-        </Link> */}
+        <a href="mailto:govaertreeven@gmail.com">
+          <NavButton>Contact</NavButton>
+        </a>
       </div >
     );
   }
@@ -64,18 +56,9 @@ const Nav = ({ smallNav }) => {
               Home
             </NavButton>
           </Link>
-
-          {/* <Link to="/#about">
-            <NavButton >
-              About
-            </NavButton>
-          </Link>
-
-          <Link to="/#projects">
-            <NavButton>
-              Projects
-            </NavButton>
-          </Link> */}
+          <a href="mailto:govaertreeven@gmail.com">
+            <NavButton>Contact</NavButton>
+          </a>
         </div>
       </>
     );
@@ -100,18 +83,9 @@ const Nav = ({ smallNav }) => {
               Home
             </NavButton>
           </Link>
-
-          {/* <Link to="/#about">
-            <NavButton >
-              About
-            </NavButton>
-          </Link>
-
-          <Link to="/#projects">
-            <NavButton>
-              Projects
-            </NavButton>
-          </Link> */}
+          <a href="mailto:govaertreeven@gmail.com">
+            <NavButton>Contact</NavButton>
+          </a>
         </div>
       </>
     );
@@ -119,7 +93,7 @@ const Nav = ({ smallNav }) => {
   return (
     <>
       <div className={`nav ${smallNav ? "always-top-nav" : ""}`}>
-        <Link to="/" className="logo"><Logo className="logo" /></Link>
+        <Link to="/" className="logo" style={{ "margin": "0px" }}><Logo className="logo" /></Link>
         {nav}
       </div>
     </>
