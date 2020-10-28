@@ -7,20 +7,24 @@
   a {
     text-decoration: none;
     width: 100%;
+    margin-bottom: 1rem;
   }
 }
 
 .logo {
   margin: 2px 2rem;
+
   rect {
     background-color: $logo-background-color;
     fill: $logo-background-color;
   }
+
   path,
   polygon {
     background-color: $logo-text-color;
     fill: $logo-text-color;
   }
+
   &:hover {
     cursor: pointer;
   }
@@ -37,6 +41,7 @@
   .logo {
     margin-right: auto;
     height: 90%;
+
     &:hover {
       cursor: pointer;
     }
@@ -44,17 +49,18 @@
 
   .menu-btn {
     display: none;
-    margin-left: auto;
     height: 3rem;
     margin: 2px 2rem;
     filter: brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
       contrast(92%);
     width: 3rem;
     justify-self: flex-end;
+
     &:hover {
       cursor: pointer;
     }
   }
+
   .menu-btn.visible {
     transition: 0.5 all;
     display: flex;
@@ -75,7 +81,7 @@
     border-radius: 12px;
 
     & :last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -105,16 +111,17 @@
 
     .menu-btn {
       display: none;
-      margin-left: auto;
       height: 3rem;
       margin: 2px 2rem;
       filter: brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
         contrast(92%);
       width: 3rem;
+
       &:hover {
         cursor: pointer;
       }
     }
+
     .menu-btn.visible {
       transition: 0.5 all;
       display: flex;
@@ -135,17 +142,11 @@
     border-radius: 6px;
 
     & :last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
   .menu-small.visible {
     display: flex;
-  }
-}
-
-.nav {
-  a {
-    margin-bottom: 1rem;
   }
 }

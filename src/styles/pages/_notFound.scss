@@ -6,13 +6,11 @@
   cursor: default;
   position: absolute;
   min-width: 320px;
-  // z-index: 0;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 75%;
-
   max-width: 500px;
 
   a {
@@ -41,12 +39,9 @@
     width: 100%;
 
     &:hover {
-      transition: ease-in 0.15s;
       opacity: 0.75;
-      // background: $blue;
       cursor: pointer;
       transition: ease-in 0.25s;
-      // background: $blue;
     }
   }
 }

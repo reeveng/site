@@ -4,7 +4,7 @@
   display: flex;
 
   .p-project__container {
-    padding: 7.5% 10% 5% 10%;
+    padding: 7.5% 10% 5%;
     min-height: 100%;
 
     .p-project__card {
@@ -61,7 +61,7 @@
         line-height: normal;
         font-size: 1.6rem;
         margin: 2rem;
-        padding: 0 2rem 4rem 2rem;
+        padding: 0 2rem 4rem;
       }
       .p-project__socials {
         width: 100%;
@@ -121,22 +121,6 @@
   #p-project {
     .p-project__container {
       padding-top: 15%;
-      .p-project__card {
-        .p-project__header {
-          .p-project__header-image__container {
-            .p-project__header-image {
-            }
-          }
-
-          .p-project__header-title {
-          }
-
-          .p-project__header-subtitle {
-          }
-        }
-        .p-project__body {
-        }
-      }
     }
   }
 }
@@ -149,45 +133,6 @@
 
       .p-project__card {
         padding-top: 3rem;
-
-        .p-project__header {
-          .p-project__header-image__container {
-            .p-project__header-image {
-            }
-          }
-
-          .p-project__header-title {
-          }
-
-          .p-project__header-subtitle {
-          }
-        }
-        .p-project__body {
-        }
-      }
-    }
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #p-project {
-    .p-project__container {
-      .p-project__card {
-        .p-project__header {
-          .p-project__header-image__container {
-            .p-project__header-image {
-            }
-          }
-
-          .p-project__header-title {
-          }
-
-          .p-project__header-subtitle {
-          }
-        }
-        .p-project__body {
-        }
       }
     }
   }
@@ -202,20 +147,6 @@
       padding-right: 15%;
       .p-project__card {
         padding-top: 5rem;
-        .p-project__header {
-          .p-project__header-image__container {
-            .p-project__header-image {
-            }
-          }
-
-          .p-project__header-title {
-          }
-
-          .p-project__header-subtitle {
-          }
-        }
-        .p-project__body {
-        }
       }
     }
   }
