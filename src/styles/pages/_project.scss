@@ -4,7 +4,7 @@
   display: flex;
 
   .p-project__container {
-    padding: 7.5% 10% 5%;
+    padding: $nav-height-small 10% 5%;
     min-height: 100%;
 
     .p-project__card {
@@ -101,7 +101,7 @@
     background: $project-background--small;
     .p-project__container {
       padding: 0;
-      padding-top: 15%;
+      padding-top: $nav-height-small;
 
       .p-project__card {
         border-radius: 0;
@@ -122,10 +122,6 @@
 @media only screen and (min-width: 500px) {
   #p-project {
     background: $project-card-background--large;
-
-    .p-project__container {
-      padding-top: 15%;
-    }
   }
 }
 
@@ -133,8 +129,6 @@
 @media only screen and (min-width: 768px) {
   #p-project {
     .p-project__container {
-      padding-top: 12%;
-
       .p-project__card {
         padding-top: 3rem;
       }
@@ -146,7 +140,6 @@
 @media only screen and (min-width: 1200px) {
   #p-project {
     .p-project__container {
-      padding-top: 10%;
       padding-left: 15%;
       padding-right: 15%;
       .p-project__card {
