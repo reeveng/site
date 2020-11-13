@@ -30,6 +30,7 @@
             background: $project-card__header-image-background;
             border-radius: 50px;
             max-width: 30%;
+            border: 5px solid $project-card__header-image-background;
           }
         }
 
@@ -78,8 +79,9 @@
           align-items: center;
 
           img {
-            filter: brightness(0) saturate(100%) invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
-              contrast(102%);
+            filter: brightness(0) saturate(100%);
+            // invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
+            // contrast(102%);
           }
         }
       }
@@ -119,6 +121,8 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
   #p-project {
+    background: $project-card-background--large;
+
     .p-project__container {
       padding-top: 15%;
     }

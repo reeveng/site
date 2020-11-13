@@ -67,25 +67,29 @@ const Home = () => {
                 Socials
               </h2>
               <div className="social-content">
-                <div className={`social-github`}>
-                  <a href="https://github.com/reeveng">
-                    <img alt="@reeveng on github" width="32px" height="32px" src={socialMedia["github"]} />
-                  </a>
+                <div className="social-row-mobile">
+                  <div className={`social-github`}>
+                    <a href="https://github.com/reeveng">
+                      <img alt="@reeveng on github" width="32px" height="32px" src={socialMedia["github"]} />
+                    </a>
+                  </div>
+                  <div className={`social-gmail`}>
+                    <a href="mailto:govaertreeven@gmail.com">
+                      <img alt="govaertreeven@gmail.com is my emailaddress" width="32px" height="32px" src={socialMedia["gmail"]} />
+                    </a>
+                  </div>
                 </div>
-                <div className={`social-gmail`}>
-                  <a href="mailto:govaertreeven@gmail.com">
-                    <img alt="govaertreeven@gmail.com is my emailaddress" width="32px" height="32px" src={socialMedia["gmail"]} />
-                  </a>
-                </div>
-                <div className={`social-dribbble`}>
-                  <a href="https://dribbble.com/reeveng">
-                    <img alt="reeveng on dribbble" width="32px" height="32px" src={socialMedia["dribble"]} />
-                  </a>
-                </div>
-                <div className={`social-linkedin`}>
-                  <a href="https://www.linkedin.com/in/rgovaert/">
-                    <img alt="rgovaert on linkedin" width="32px" height="32px" src={socialMedia["linkedin"]} />
-                  </a>
+                <div className="social-row-mobile">
+                  <div className={`social-dribbble`}>
+                    <a href="https://dribbble.com/reeveng">
+                      <img alt="reeveng on dribbble" width="32px" height="32px" src={socialMedia["dribble"]} />
+                    </a>
+                  </div>
+                  <div className={`social-linkedin`}>
+                    <a href="https://www.linkedin.com/in/rgovaert/">
+                      <img alt="rgovaert on linkedin" width="32px" height="32px" src={socialMedia["linkedin"]} />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

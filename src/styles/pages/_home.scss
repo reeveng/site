@@ -86,14 +86,12 @@
   width: 100px;
 
   #working {
-    width: 100%;
+    max-width: 80%;
   }
 }
 @keyframes kaboom {
   0% {
     transform: translate(-90%);
-  }
-  100% {
   }
 }
 @keyframes random {
@@ -162,30 +160,35 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    div {
-      margin: 0 2rem;
+    .social-row-mobile {
       display: flex;
-      text-align: center;
       flex-direction: row;
-      align-items: center;
 
-      a {
-        border-radius: 50px;
-        padding: 2rem;
-        background: $blue;
+      div {
+        margin: 0 2rem;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
 
-        &:hover {
-          transition: ease 0.3s;
-          background: $green;
+        a {
+          border-radius: 50px;
+          padding: 2rem;
+          background: $socials-background;
+
+          &:hover {
+            transition: ease 0.3s;
+            background: $socials-background--hover;
+          }
         }
-      }
 
-      img {
-        width: 32px;
-        height: 32px;
-        filter: brightness(0) saturate(100%) invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
-          contrast(102%);
+        img {
+          width: 32px;
+          height: 32px;
+          filter: brightness(0) invert(100%);
+          // saturate(100%) invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
+          // contrast(102%);
+        }
       }
     }
   }
@@ -202,14 +205,16 @@
 @media screen and (max-width: 767px) {
   .social-section {
     .social-content {
-      div {
-        margin: 0 0.5rem;
-        a {
-          padding: 1rem;
-        }
-        img {
-          width: 24px;
-          height: 24px;
+      .social-row-mobile {
+        div {
+          margin: 0 0.2rem;
+          a {
+            padding: 1rem;
+          }
+          img {
+            width: 24px;
+            height: 24px;
+          }
         }
       }
     }

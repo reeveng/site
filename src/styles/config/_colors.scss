@@ -3,28 +3,45 @@
 keep all colors in hsl or hsla
 -------------------------
 */
+
+// original color settings
 $blue: #05386b;
 $blue-o5: hsla(210, 91%, 22%, 0.5);
 $darker-green: #172815;
 $dark-green: #379683;
 $green: #5cdb95;
 $light-green: #8ee4af;
-
 $white: #edf5e1;
 $black: #2c3e50;
 $gray: #999999;
+$primary: $green;
+$primary-white: $white;
+$primary-black: $black;
+$secondary: $blue;
+$accent: $dark-green;
+$secondary-accent: $darker-green;
+$primary-text-color: $white;
+$secondary-text-color: $dark-green;
+$accent-text-color: $green;
 
-$background: $green;
-$background-nav: $blue;
+// color settings
+$light-red: #fb4e4e;
+$black: #23282f;
+$white: #fbfbfb;
+$primary: $white;
+$primary-white: $black;
+$accent: rgba($black, 0.5);
+// $accent-text-color: $light-red;
+// $gray: #999999;
+$secondary: $black;
+// $accent: $dark-green;
+// $secondary-accent: $darker-green;
+// $primary-text-color: $white;
+// $secondary-text-color: $dark-green;
 
 // logo
-$logo-text-color: $green;
-$logo-background-color: $blue;
-
-$primary: $white;
-$secondary: $light-green;
-$accent: $dark-green;
-$accent-2: $darker-green;
+$logo-text-color: $primary;
+$logo-background-color: $secondary;
 
 // badge
 $badge-text-color: #ffffff;
@@ -33,41 +50,52 @@ $badge-info-bg: #3498db;
 $badge-warning-bg: #f1c40f;
 $badge-danger-bg: #e74c3c;
 $badge-success-bg: #2ecc71;
-
-$badge--line-text: $blue;
-$badge--line-shadow: $blue;
-$badge--basic-text: $white;
-$badge--basic-background: $black;
+$badge--line-text: $secondary;
+$badge--line-shadow: $secondary;
+$badge--basic-text: $primary-white;
+$badge--basic-background: $primary-black;
 
 // buttons
-$color-gray: $blue;
-$color-black: $green;
-
+$color-gray: $secondary;
+$color-black: $primary;
 $btn-color: $color-gray;
-$btn-background: $green;
-$btn-color-hover: $green;
+$btn-background: $primary;
+$btn-color-hover: $primary;
 $btn-background-hover: $color-gray;
 $border-color: $color-gray;
 $border-color-hover: $color-black;
 
 // background
-$background-nav-small: $blue-o5;
+$background-nav-small: rgba($secondary, 0.5);
+$background: $primary;
+$background-nav: $secondary;
+$socials-background--hover: rgba($secondary, 0.5);
+$socials-background: $secondary;
 
 // card
-$card-basic-text: $dark-green;
-$card-basic-background: $white;
-$card-basic-background--hover: $dark-green;
-$card-basic-text--hover: $white;
+$card-color-dark: $accent;
+$card-color-light: $primary-white;
+// temporary -----------------------------------------------------------------------------------------------
+$card-color-dark: rgba($secondary, 0.5);
+// temporary -----------------------------------------------------------------------------------------------
+$card-basic-text: $card-color-dark;
+$card-basic-background: $card-color-light;
+$card-basic-background--hover: $card-color-dark;
+$card-basic-text--hover: $card-color-light;
+// temporary -----------------------------------------------------------------------------------------------
+$card-basic-text: rgba($primary, 0.5);
+// temporary -----------------------------------------------------------------------------------------------
 
 // projectpage
-$project-card-background: $dark-green;
-$project-background--small: $dark-green;
-$project-card__header-image-background: $white;
-$project-card-text: $white;
+$project-card-background: $primary;
+$project-card-background--large: $secondary;
+$project-background--small: $accent;
+$project-card__header-image-background: $primary-white;
+$project-card-text: $primary-white;
 
 // homepage
-$homepage--basic-text: $white;
+$homepage--basic-text: $primary-white;
 $card-basic__image-background: $gray;
 
 // loading
-$loading-light: $white;
+$loading-light: $primary-white;

@@ -51,8 +51,9 @@
     display: none;
     height: 3rem;
     margin: 2px 2rem;
-    filter: brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
-      contrast(92%);
+    filter: brightness(0) invert(100%);
+    // saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
+    // contrast(92%);
     width: 3rem;
     justify-self: flex-end;
 
@@ -113,8 +114,9 @@
       display: none;
       height: 3rem;
       margin: 2px 2rem;
-      filter: brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
-        contrast(92%);
+      filter: brightness(0) invert(100%);
+      // saturate(100%) invert(80%) sepia(13%) saturate(1559%) hue-rotate(92deg) brightness(93%)
+      // contrast(92%);
       width: 3rem;
 
       &:hover {

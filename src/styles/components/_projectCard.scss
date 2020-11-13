@@ -16,6 +16,7 @@
       height: 20rem;
       border-radius: 50px;
       background: $card-basic__image-background;
+      border: 5px solid $card-basic-background;
     }
 
     .card-title {
@@ -38,8 +39,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .project-list{
-    .card{
+  .project-list {
+    .card {
       .topImg {
         height: 10rem;
         width: 10rem;
@@ -49,8 +50,8 @@
 }
 
 @media only screen and (max-height: 800px) {
-  .project-list{
-    .card{
+  .project-list {
+    .card {
       .topImg {
         height: 9rem;
         width: 9rem;
@@ -60,8 +61,8 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .project-list{
-    .card{
+  .project-list {
+    .card {
       .topImg {
         height: 5rem;
         width: 5rem;
