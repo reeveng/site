@@ -79,9 +79,7 @@
           align-items: center;
 
           img {
-            filter: brightness(0) saturate(100%);
-            // invert(94%) sepia(9%) saturate(256%) hue-rotate(42deg) brightness(98%)
-            // contrast(102%);
+            filter: brightness(0) invert(100%);
           }
         }
       }

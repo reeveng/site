@@ -3,17 +3,11 @@ import './styles/styles.scss';
 import { Route, Switch } from 'react-router-dom';
 import Loading from './components/Loading';
 
-// pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Project from './pages/Project';
 
-// function getEmail() {
-//   console.log("%cYou're welcome ;) govaertreeven@gmail.com")
-// }
-
 function App() {
-  // console.log("%cHey, do you have questions? run `getEmail()`", "")
   return (
     <div className="app">
       <Switch>
