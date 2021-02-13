@@ -1,4 +1,4 @@
-#p-project {
+/*#p-project {
   min-height: 100%;
   background: $background;
   display: flex;
@@ -93,7 +93,6 @@
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   #p-project {
     background: $project-background--small;
@@ -116,14 +115,12 @@
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
   #p-project {
     background: $project-card-background--large;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #p-project {
     .p-project__container {
@@ -134,7 +131,6 @@
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #p-project {
     .p-project__container {
@@ -146,3 +142,4 @@
     }
   }
 }
+*/

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+/*import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from "../assets/vector/logo.svg";
 import { ReactComponent as Menu } from "../assets/vector/menu.svg";
@@ -100,4 +100,4 @@ const Nav = ({ smallNav }) => {
   );
 }
 
-export default Nav;
+export default Nav;*/

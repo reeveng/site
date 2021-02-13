@@ -33,8 +33,9 @@
         font-size: 5rem;
         margin: 0;
         padding: 0;
-        margin-top: 6rem;
-        margin-bottom: 5rem;
+        // margin-top: 6rem;
+        // margin-bottom: 5rem;
+        margin: 2rem 0;
       }
 
       & .content-body {
@@ -145,7 +146,7 @@
   #homepage {
     & .pane {
       padding-left: 0;
-      padding-top: $nav-height-small;
+      // padding-top: $nav-height-small;
     }
   }
 }

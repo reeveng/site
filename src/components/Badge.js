@@ -1,5 +1,5 @@
 
-import React from 'react';
+/*import React from 'react';
 
 const Badge = ({ children, className }) => {
   return (
@@ -10,3 +10,4 @@ const Badge = ({ children, className }) => {
 }
 
 export default Badge;
+*/

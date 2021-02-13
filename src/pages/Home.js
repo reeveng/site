@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Nav from '../components/Nav';
+// import Nav from '../components/Nav';
 import { ReactComponent as Working } from "../assets/vector/working.svg"
 import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
@@ -26,12 +26,12 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Nav smallNav />
+      {/* <Nav smallNav /> */}
       <div id="homepage">
         <div className="pane" id="home">
           <div className="content">
             <h1 className="title">
-              I am Reeven
+              Reeven
             </h1>
             <div className="content-body">
               <div id="working-svg">

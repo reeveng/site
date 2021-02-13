@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 const NavButton = ({ onClick, className, children }) => {
   return (
@@ -10,4 +10,4 @@ const NavButton = ({ onClick, className, children }) => {
   );
 }
 
-export default NavButton;
+export default NavButton;*/
