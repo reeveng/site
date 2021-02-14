@@ -1,12 +1,10 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
-import Nav from '../components/Nav';
 
 const NotFound = () => {
   return (
     <>
       <div id="p-notfound">
-        <Nav smallNav />
         <div className="code-area">
           <div className="code-area__top">
             <span style={{ color: "#777", fontStyle: "italic" }}>

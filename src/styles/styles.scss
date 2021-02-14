@@ -1,12 +1,11 @@
 /*----------------- config scss files -----------------------*/
-@import './config/variables', './config/_colors.scss', '../assets/fonts/fonts', './config/text';
+@import './config/_colors', '../assets/fonts/fonts', './config/text';
 
 /*----------------- components scss files -----------------------*/
-@import './components/_loading.scss', './components/nav', 'components/navButton', './components/badge',
-  './components/projectCard';
+@import './components/_loading', './components/projectCard', './components/modal';
 
 /*----------------- pages scss files -----------------------*/
-@import './pages/_home.scss', './pages/_project.scss', './pages/_notFound.scss';
+@import './pages/_home', './pages/_notFound';
 
 html,
 body {
@@ -14,12 +13,16 @@ body {
   margin: 0;
   padding: 0%;
   background-color: $background;
+
+  .st0 {
+    fill: $white;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-  html {
-    background: $background-nav;
-  }
+  // html {
+  //   background: $background-nav;
+  // }
 
   body {
     height: 100%;

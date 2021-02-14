@@ -28,14 +28,14 @@ $accent-text-color: $green;
 $light-red: #fb4e4e;
 $black: #23282f;
 $white: #fbfbfb;
-$primary: $white;
-$primary-white: $black;
-$accent: rgba($black, 0.5);
-$secondary: $black;
+$primary: $black;
+$primary-white: $white;
+$accent: rgba($white, 0.1);
+$secondary: $white;
 
 // logo
-$logo-text-color: $primary;
-$logo-background-color: $secondary;
+// $logo-text-color: $primary;
+// $logo-background-color: $secondary;
 
 // // badge
 // $badge-text-color: #ffffff;
@@ -62,7 +62,7 @@ $border-color-hover: $color-black;
 // background
 $background-nav-small: rgba($secondary, 0.5);
 $background: $primary;
-$background-nav: $secondary;
+// $background-nav: $secondary;
 $socials-background--hover: rgba($secondary, 0.5);
 $socials-background: $secondary;
 
@@ -81,11 +81,11 @@ $socials-background: $secondary;
 // // temporary -----------------------------------------------------------------------------------------------
 
 // projectpage
-$project-card-background: $primary;
-$project-card-background--large: $secondary;
-$project-background--small: $accent;
-$project-card__header-image-background: $primary-white;
-$project-card-text: $primary-white;
+// $project-card-background: $primary;
+// $project-card-background--large: $secondary;
+// $project-background--small: $accent;
+// $project-card__header-image-background: $primary-white;
+// $project-card-text: $primary-white;
 
 // homepage
 $homepage--basic-text: $primary-white;

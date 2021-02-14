@@ -1,33 +1,45 @@
 import React, { useEffect } from 'react';
-// import Nav from '../components/Nav';
 import { ReactComponent as Working } from "../assets/vector/working.svg"
 import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
-import { socialMedia } from "./Project"
+import { useWindowSize } from '../components/OnResize';
+
+let moveSpeed;
+
 
 const onScrollHomepage = () => {
   let homepageDiv = document.getElementById("homepage");
   homepageDiv.addEventListener("wheel", (event) => {
+    moveSpeed = Math.floor(window.innerWidth / 100)
+    moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
     if (event.deltaY < 0) {
-      homepageDiv.scrollLeft -= 25;
+      homepageDiv.scrollLeft -= moveSpeed;
     }
     else if (event.deltaY > 0) {
-      homepageDiv.scrollLeft += 25;
+      homepageDiv.scrollLeft += moveSpeed;
     }
+    console.log(moveSpeed);
   })
 }
 
+
 const Home = () => {
+  const [width,] = useWindowSize();
   projects.sort((a, b) => new Date(b.date.year, b.date.month - 1) - new Date(a.date.year, a.date.month - 1));
   window.addEventListener('scroll', function (e) {
   });
+
   useEffect(() => {
     onScrollHomepage()
   }, []);
+
+
   return (
     <>
       {/* <Nav smallNav /> */}
+
       <div id="homepage">
+
         <div className="pane" id="home">
           <div className="content">
             <h1 className="title">
@@ -35,7 +47,7 @@ const Home = () => {
             </h1>
             <div className="content-body">
               <div id="working-svg">
-                <Working id="working" />
+                <Working id="working" style={{ maxWidth: width - 20 }} />
               </div>
             </div>
           </div>
@@ -46,12 +58,13 @@ const Home = () => {
               About
             </h1>
             <div className="about-text">
-              <div className="about-text-intro">
-                I am a Developer and Creative Designer born and raised (mainly) in Belgium.
-                As a recent graduate I am quite interested in learning and developing / honing my current set of skills.
-                I speak the language of developers with a users perspective in mind.
-                I love doing UX/UI, Branding, photography, Graphic Design, ... Let's just say I am a studio on my on.
-              </div>
+              <p className="about-text-intro">
+                Hi there! I am <span className="highlight">Reeven</span>, a developer from Belgium.<br />
+                <br />
+                I thoroughly enjoy solving enigmas, learning, <a href="https://lichess.org">chess</a>, exercising and honing my current set of skills.<br />
+                <br />
+                One of my key attributes is that I speak the language of developers with a users perspective in mind.<br />
+              </p>
 
               {/* 2. Significant personal achievements or awards
               3. Personal details: goals, hobbies, ...
@@ -62,7 +75,7 @@ const Home = () => {
               I love to travel to distant countries. */}
 
             </div>
-            <div className="social-section">
+            {/* <div className="social-section">
               <h2 className="social-title">
                 Socials
               </h2>
@@ -92,17 +105,17 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="pane" id="projects">
           <div className="content">
-            <h1 className="title">
+            <h1 className="title" style={{ maxWidth: width }}>
               Projects
             </h1>
             <div className="project-list">
-              {projects.map(project => {
-                return (<ProjectCard imgSrc={project.img_src} projectId={project.id} key={project.id} cardTitle={project.title} imgAlt={project.img_alt} />)
+              {projects.map((project, index) => {
+                return (<ProjectCard imgSrc={project.img_src} projectId={project.id} key={project.id} cardTitle={project.title} imgAlt={project.img_alt} index={index} />)
               })}
             </div>
           </div>

@@ -2,16 +2,13 @@ import React, { Suspense } from 'react';
 import './styles/styles.scss';
 import { Route, Switch } from 'react-router-dom';
 import Loading from './components/Loading';
-
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Project from './pages/Project';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" id="app">
       <Switch>
-        <PublicRoute exact path="/projects/:id" component={Project} heroActive />
         <PublicRoute exact path="/" component={Home} heroActive />
         <PublicRoute exact path="/home" component={Home} heroActive />
         <PublicRoute exact path="/notFound" component={NotFound} />
