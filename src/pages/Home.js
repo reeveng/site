@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { ReactComponent as Working } from "../assets/vector/working.svg"
+import { ReactComponent as ArrowRight } from "../assets/vector/arrowRight.svg"
 import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
 import { useWindowSize } from '../components/OnResize';
@@ -18,7 +19,7 @@ const onScrollHomepage = () => {
     else if (event.deltaY > 0) {
       homepageDiv.scrollLeft += moveSpeed;
     }
-    console.log(moveSpeed);
+    document.getElementById("arrowRight").classList.add("visible");
   })
 }
 
@@ -45,10 +46,11 @@ const Home = () => {
             <h1 className="title">
               Reeven
             </h1>
-            <div className="content-body">
+            <div className="content-body" style={{ display: "flex", flexDirection: "column" }}>
               <div id="working-svg">
                 <Working id="working" style={{ maxWidth: width - 20 }} />
               </div>
+              <ArrowRight id="arrowRight" style={{ width: 30, height: 30, marginTop: "5%" }} />
             </div>
           </div>
         </div>
