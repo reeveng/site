@@ -6,20 +6,28 @@ import { projects } from "../assets/json/projects";
 import { useWindowSize } from '../components/OnResize';
 
 let moveSpeed;
-
+let firstTime = true;
 
 const onScrollHomepage = () => {
   let homepageDiv = document.getElementById("homepage");
   homepageDiv.addEventListener("wheel", (event) => {
-    moveSpeed = Math.floor(window.innerWidth / 100)
-    moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
+    if (firstTime) {
+      moveSpeed = Math.floor(window.innerWidth / 100)
+      moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
+      if (window.innerWidth > 900) {
+        if (moveSpeed <= 30) {
+          moveSpeed = 30;
+        }
+      }
+      document.getElementById("arrowRight").classList.add("visible");
+      firstTime = false;
+    }
     if (event.deltaY < 0) {
       homepageDiv.scrollLeft -= moveSpeed;
     }
     else if (event.deltaY > 0) {
       homepageDiv.scrollLeft += moveSpeed;
     }
-    document.getElementById("arrowRight").classList.add("visible");
   })
 }
 
@@ -50,7 +58,7 @@ const Home = () => {
               <div id="working-svg">
                 <Working id="working" style={{ maxWidth: width - 20 }} />
               </div>
-              <ArrowRight id="arrowRight" style={{ width: 30, height: 30, marginTop: "5%" }} />
+              <ArrowRight id="arrowRight" style={{ width: 30, height: 30, marginTop: "5%" }} onClick={() => { document.getElementById('about').scrollIntoView(); }} />
             </div>
           </div>
         </div>
