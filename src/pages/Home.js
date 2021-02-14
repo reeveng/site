@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import { projects } from "../assets/json/projects";
 import { useWindowSize } from '../components/OnResize';
 
-let moveSpeed;
+let moveSpeed = 0;
 let firstTime = true;
 
 const onScrollHomepage = () => {
@@ -15,18 +15,21 @@ const onScrollHomepage = () => {
       moveSpeed = Math.floor(window.innerWidth / 100)
       moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
       if (window.innerWidth > 900) {
-        if (moveSpeed <= 30) {
-          moveSpeed = 30;
+        if (moveSpeed <= 37) {
+          moveSpeed = 37;
         }
       }
       document.getElementById("arrowRight").classList.add("visible");
       firstTime = false;
+      return;
     }
     if (event.deltaY < 0) {
       homepageDiv.scrollLeft -= moveSpeed;
+      return;
     }
-    else if (event.deltaY > 0) {
+    if (event.deltaY > 0) {
       homepageDiv.scrollLeft += moveSpeed;
+      return;
     }
   })
 }
