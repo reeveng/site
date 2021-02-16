@@ -141,37 +141,48 @@
   }
 }
 
-#arrowRight {
-  visibility: hidden;
+.arrowRight {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+  color: $white;
 
-  &.visible {
-    -webkit-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
-    -moz-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
-    animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
-    visibility: visible;
-
-    &:hover {
-      -webkit-animation: spin 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-      -moz-animation: spin 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-      animation: spin 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-      animation-fill-mode: forwards;
-    }
+  &:hover {
+    -webkit-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
+    -moz-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
+    animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
   }
+}
+
+.arrowLeft {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+  color: $white;
+
+  &:hover {
+    -webkit-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
+    -moz-animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
+    animation: spin 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3;
+  }
+}
+
+.invisible {
+  display: none;
 }
 
 @-moz-keyframes spin {
   100% {
-    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
