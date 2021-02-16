@@ -13,33 +13,33 @@ let nr = 0;
 const onScrollHomepage = () => {
   let homepageDiv = document.getElementById("homepage");
   homepageDiv.addEventListener("wheel", (event) => {
-    if (nr > 1) {
-      console.log();
-      if (firstTime) {
-        moveSpeed = Math.floor(window.innerWidth / 100);
-        if (window.innerWidth > 900) {
-          if (moveSpeed <= 37) {
-            moveSpeed = 37;
-          }
-        } else {
-          moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
+    if (firstTime) {
+      moveSpeed = Math.floor(window.innerWidth / 100);
+      if (window.innerWidth > 900) {
+        if (moveSpeed <= 37) {
+          moveSpeed = 37;
         }
-        firstTime = false;
-        return;
+      } else {
+        moveSpeed = moveSpeed <= 10 ? 10 : moveSpeed;
       }
+      firstTime = false;
+      return;
+    }
+    if (nr > 10) {
+      arrows();
       nr = 0;
-
-      if (event.deltaY < 0) {
-        homepageDiv.scrollLeft -= moveSpeed;
-        return;
-      }
-      if (event.deltaY > 0) {
-        homepageDiv.scrollLeft += moveSpeed;
-        return;
-      }
     }
     nr++;
-    arrows();
+
+    if (event.deltaY < 0) {
+      homepageDiv.scrollLeft -= moveSpeed;
+      return;
+    }
+    if (event.deltaY > 0) {
+      homepageDiv.scrollLeft += moveSpeed;
+      return;
+    }
+
     return;
   });
 }
