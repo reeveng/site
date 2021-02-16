@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.2137504d.chunk.css",
-    "main.js": "/site/static/js/main.2213cba7.chunk.js",
-    "main.js.map": "/site/static/js/main.2213cba7.chunk.js.map",
+    "main.css": "/site/static/css/main.0ccfc40d.chunk.css",
+    "main.js": "/site/static/js/main.fa43e56a.chunk.js",
+    "main.js.map": "/site/static/js/main.fa43e56a.chunk.js.map",
     "runtime-main.js": "/site/static/js/runtime-main.2b7e4cad.js",
     "runtime-main.js.map": "/site/static/js/runtime-main.2b7e4cad.js.map",
     "static/js/2.6c79a7eb.chunk.js": "/site/static/js/2.6c79a7eb.chunk.js",
     "static/js/2.6c79a7eb.chunk.js.map": "/site/static/js/2.6c79a7eb.chunk.js.map",
     "index.html": "/site/index.html",
-    "static/css/main.2137504d.chunk.css.map": "/site/static/css/main.2137504d.chunk.css.map",
+    "static/css/main.0ccfc40d.chunk.css.map": "/site/static/css/main.0ccfc40d.chunk.css.map",
     "static/js/2.6c79a7eb.chunk.js.LICENSE.txt": "/site/static/js/2.6c79a7eb.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/site/static/media/BigJohnPRO-Regular.c970d749.otf",
+    "static/media/arrowLeft.8f09595c.svg": "/site/static/media/arrowLeft.8f09595c.svg",
     "static/media/arrowRight.fdf65a97.svg": "/site/static/media/arrowRight.fdf65a97.svg",
     "static/media/dribbble.7dbe5a10.svg": "/site/static/media/dribbble.7dbe5a10.svg",
     "static/media/github.16a9304e.svg": "/site/static/media/github.16a9304e.svg",
@@ -22,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b7e4cad.js",
     "static/js/2.6c79a7eb.chunk.js",
-    "static/css/main.2137504d.chunk.css",
-    "static/js/main.2213cba7.chunk.js"
+    "static/css/main.0ccfc40d.chunk.css",
+    "static/js/main.fa43e56a.chunk.js"
   ]
 }
