@@ -51,7 +51,6 @@ let arrows = () => {
   let closest = Math.min(home, about, projects);
   if (closest === home) {
     document.getElementById("arrowLeft").classList.add("invisible");
-    document.getElementById("arrowRight").classList.remove("invisible");
     return;
   }
   if (closest === about) {
@@ -61,7 +60,6 @@ let arrows = () => {
   }
   if (closest === projects) {
     document.getElementById("arrowRight").classList.add("invisible");
-    document.getElementById("arrowLeft").classList.remove("invisible");
     return;
   }
 }
