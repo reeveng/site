@@ -49,6 +49,7 @@ let arrows = () => {
   let about = Math.abs(document.getElementById("about").getBoundingClientRect().x);
   let projects = Math.abs(document.getElementById("projects").getBoundingClientRect().x);
   let closest = Math.min(home, about, projects);
+
   if (closest === home) {
     document.getElementById("arrowLeft").classList.add("invisible");
     return;
