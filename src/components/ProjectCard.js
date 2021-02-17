@@ -41,7 +41,7 @@ const ProjectCard = ({ children, className, imgAlt, imgSrc, projectId, cardTitle
                   </h4>
 
                   <div className="p-project__body">
-                    {project.content.map((string, index) => { return (<p key={index}>{string}</p>) })}
+                    {project.content.map((string, index) => (<p key={index}>{string === "<br/>" ? (<br />) : string}</p>))}
                     <h2 className="p-project__socials__title">Socials</h2>
                     <div className="p-project__socials">
                       {project.social_media.map((social) => {

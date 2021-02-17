@@ -4,7 +4,7 @@
       "img_src": "",
       "img_alt": "",
       "title": "",
-      "content": "",
+      "content": [""],
       "date": {
         "year": 2020,
         "month": 9,
