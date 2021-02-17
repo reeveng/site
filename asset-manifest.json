@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.0ccfc40d.chunk.css",
-    "main.js": "/site/static/js/main.8051d55a.chunk.js",
-    "main.js.map": "/site/static/js/main.8051d55a.chunk.js.map",
+    "main.css": "/site/static/css/main.c4e7febb.chunk.css",
+    "main.js": "/site/static/js/main.f1b16a28.chunk.js",
+    "main.js.map": "/site/static/js/main.f1b16a28.chunk.js.map",
     "runtime-main.js": "/site/static/js/runtime-main.2b7e4cad.js",
     "runtime-main.js.map": "/site/static/js/runtime-main.2b7e4cad.js.map",
     "static/js/2.6c79a7eb.chunk.js": "/site/static/js/2.6c79a7eb.chunk.js",
     "static/js/2.6c79a7eb.chunk.js.map": "/site/static/js/2.6c79a7eb.chunk.js.map",
     "index.html": "/site/index.html",
-    "static/css/main.0ccfc40d.chunk.css.map": "/site/static/css/main.0ccfc40d.chunk.css.map",
+    "static/css/main.c4e7febb.chunk.css.map": "/site/static/css/main.c4e7febb.chunk.css.map",
     "static/js/2.6c79a7eb.chunk.js.LICENSE.txt": "/site/static/js/2.6c79a7eb.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/site/static/media/BigJohnPRO-Regular.c970d749.otf",
     "static/media/arrowLeft.8f09595c.svg": "/site/static/media/arrowLeft.8f09595c.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b7e4cad.js",
     "static/js/2.6c79a7eb.chunk.js",
-    "static/css/main.0ccfc40d.chunk.css",
-    "static/js/main.8051d55a.chunk.js"
+    "static/css/main.c4e7febb.chunk.css",
+    "static/js/main.f1b16a28.chunk.js"
   ]
 }
