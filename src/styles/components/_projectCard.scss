@@ -67,5 +67,9 @@
     flex-direction: row;
     filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(7499%) hue-rotate(179deg) brightness(108%)
       contrast(97%);
+
+    * {
+      margin: 0 0.25rem;
+    }
   }
 }
