@@ -2,7 +2,7 @@
 @import './config/_colors', '../assets/fonts/fonts', './config/text';
 
 /*----------------- components scss files -----------------------*/
-@import './components/_loading', './components/projectCard', './components/modal';
+@import './components/projectCard', './components/modal';
 
 /*----------------- pages scss files -----------------------*/
 @import './pages/_home', './pages/_notFound';
@@ -20,10 +20,6 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  // html {
-  //   background: $background-nav;
-  // }
-
   body {
     height: 100%;
   }

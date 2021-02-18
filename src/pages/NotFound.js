@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
@@ -35,7 +36,9 @@ const NotFound = () => {
             </span>
           </div>
           <button className="code-area__bottom">
-            Let's go home
+            <Link to="home">
+              Let's go home
+            </Link>
           </button>
         </div>
       </div >

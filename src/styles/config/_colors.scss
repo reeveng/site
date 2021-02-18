@@ -33,23 +33,6 @@ $primary-white: $white;
 $accent: rgba($white, 0.1);
 $secondary: $white;
 
-// logo
-// $logo-text-color: $primary;
-// $logo-background-color: $secondary;
-
-// // badge
-// $badge-text-color: #ffffff;
-// $badge-default-bg: #2c3e50;
-// $badge-info-bg: #3498db;
-// $badge-warning-bg: #f1c40f;
-// $badge-danger-bg: #e74c3c;
-// $badge-success-bg: #2ecc71;
-// $badge--line-text: $secondary;
-// $badge--line-shadow: $secondary;
-// $badge--basic-text: $primary-white;
-// $badge--basic-background: $primary-black;
-
-// buttons
 $color-gray: $secondary;
 $color-black: $primary;
 $btn-color: $color-gray;
@@ -66,30 +49,6 @@ $background: $primary;
 $socials-background--hover: rgba($secondary, 0.5);
 $socials-background: $secondary;
 
-// // card
-// $card-color-dark: $accent;
-// $card-color-light: $primary-white;
-// // temporary -----------------------------------------------------------------------------------------------
-// $card-color-dark: rgba($secondary, 0.5);
-// // temporary -----------------------------------------------------------------------------------------------
-// $card-basic-text: $card-color-dark;
-// $card-basic-background: $card-color-light;
-// $card-basic-background--hover: $card-color-dark;
-// $card-basic-text--hover: $card-color-light;
-// // temporary -----------------------------------------------------------------------------------------------
-// $card-basic-text: rgba($primary, 0.5);
-// // temporary -----------------------------------------------------------------------------------------------
-
-// projectpage
-// $project-card-background: $primary;
-// $project-card-background--large: $secondary;
-// $project-background--small: $accent;
-// $project-card__header-image-background: $primary-white;
-// $project-card-text: $primary-white;
-
 // homepage
 $homepage--basic-text: $primary-white;
 $card-basic__image-background: $gray;
-
-// loading
-$loading-light: $primary-white;

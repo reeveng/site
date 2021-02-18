@@ -45,23 +45,26 @@ const onScrollHomepage = () => {
 }
 
 let arrows = () => {
-  let home = Math.abs(document.getElementById("home").getBoundingClientRect().x);
-  let about = Math.abs(document.getElementById("about").getBoundingClientRect().x);
-  let projects = Math.abs(document.getElementById("projects").getBoundingClientRect().x);
-  let closest = Math.min(home, about, projects);
+  let home = document.getElementById("home");
+  if (home !== null) {
+    home = Math.abs(home.getBoundingClientRect().x);
+    let about = Math.abs(document.getElementById("about").getBoundingClientRect().x);
+    let projects = Math.abs(document.getElementById("projects").getBoundingClientRect().x);
+    let closest = Math.min(home, about, projects);
 
-  if (closest === home) {
-    document.getElementById("arrowLeft").classList.add("invisible");
-    return;
-  }
-  if (closest === about) {
-    document.getElementById("arrowRight").classList.remove("invisible");
-    document.getElementById("arrowLeft").classList.remove("invisible");
-    return;
-  }
-  if (closest === projects) {
-    document.getElementById("arrowRight").classList.add("invisible");
-    return;
+    if (closest === home) {
+      document.getElementById("arrowLeft").classList.add("invisible");
+      return;
+    }
+    if (closest === about) {
+      document.getElementById("arrowRight").classList.remove("invisible");
+      document.getElementById("arrowLeft").classList.remove("invisible");
+      return;
+    }
+    if (closest === projects) {
+      document.getElementById("arrowRight").classList.add("invisible");
+      return;
+    }
   }
 }
 
