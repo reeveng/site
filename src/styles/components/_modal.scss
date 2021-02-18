@@ -22,6 +22,7 @@
     max-height: calc(100vh - 50px);
     overflow: scroll;
     border-radius: 27.5px;
+    max-width: 800px;
 
     .modal-close-btn {
       color: $light-red;
