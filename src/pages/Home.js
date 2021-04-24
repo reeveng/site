@@ -118,7 +118,9 @@ const Home = () => {
               if (closest === home) {
                 return;
               }
-            }} />
+            }
+          }
+          onLoad={arrows()} />
       </div>
       <div className="arrowRight"
         style={
@@ -158,7 +160,9 @@ const Home = () => {
               if (closest === projects) {
                 return;
               }
-            }} />
+            }
+          }
+        />
       </div>
       <div id="homepage">
         <div className="pane"
